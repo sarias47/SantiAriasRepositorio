@@ -1,0 +1,4 @@
+"""
+Lista por comprension
+filtros
+"""
