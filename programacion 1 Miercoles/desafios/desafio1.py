@@ -17,16 +17,30 @@ de cada materia.
 
 import random
 
-def matriz(estudiantes,materias):
-    estudiantes=["juan", "alberto", "martin", "federico", "tomas", "lucas"]
-    materias=["Matematica", "Ingles", "Fisica", "Biologia", "Arte", "Musica", "Ed. Fisica"]
-    return [[0]*estudiantes for fil in range(materias)]
+estudiantes=5
+materias=5
+matriz5x5=[]
+for fil in range(estudiantes):
+    matriz5x5.append([])
+    for col in range(materias):
+        matriz5x5[fil].append(random.randint(1,10))
 
-def llenar_matriz(materias):
-    estudiantes = len(materias)
-    materias = len(materias*[0])
-    for fil in range(estudiantes):
-        for col in range(materias):
-            num_aleatorio = random.randint(1,10)
-            materias[fil][col] = num_aleatorio
+for i in range(5):
+    matriz5x5[i][0]= "Estudiantes"
 
+matriz5x5[0][0]="       "
+matriz5x5[0][1]="Lengua"
+matriz5x5[0][2]="Fisica"
+matriz5x5[0][3]="Biologia"
+matriz5x5[0][4]="Matematica"
+
+for i in range(5):
+    print(matriz5x5[i])
+
+for i in range(4):
+    num=matriz5x5[i+1][1]+matriz5x5[i+1][2]+matriz5x5[i+1][3]+matriz5x5[i+1][4]
+    print("El promedio de los estudiantes es es: ", num/4)
+
+for i in range(4):
+    prom=matriz5x5[1][i+1]+matriz5x5[2][i+1]+matriz5x5[3][i+1]+matriz5x5[4][i+1]
+    print("El promedio de las materias es: ", prom/4)
