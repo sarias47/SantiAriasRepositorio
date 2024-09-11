@@ -1,27 +1,19 @@
-datos_usuarios = []
+"""def Crear_matriz():
+    i=0
+    tipo=0
 
-while True:
-    nombre_completo = input("Ingrese su nombre completo: ")
-    dni = input("Ingrese su DNI: ")
-    email = input("Ingrese su email: ")
-    usuario = input("Ingrese su usuario: ")
-    contraseña = input("Ingrese su contraseña: ")
-
-    datos_usuario = [
-        f"Nombre Completo: {nombre_completo}",
-        f"DNI: {dni}",
-        f"Email: {email}",
-        f"Usuario: {usuario}",
-        f"Contraseña: {contraseña}"
-]
-
-    datos_usuarios.append(datos_usuario)
-
-    continuar = input("¿Desea ingresar otro usuario? (si/no): ")
-    if continuar.lower() != 's':
-        break
-
-for usuario in datos_usuarios:
-    print("-" * 20)
-    print("\n".join(usuario))
-    print("-" * 20)  
+    while tipo != "E":
+        print('a)Música'.center(10,' '),'b)Familia'.center(10,' '),'c)Teatro'.center(10,' '),'d)Cine'.center(10,' '),'e)Salir'.center(10,' '))
+        tipo=input("Ingrese el tipo de evento: ")
+        tipo=tipo.upper()
+        if tipo != "E":    
+            matriz_eventos.append([])
+            nombre=input("Ingrese el nombre del evento: ")
+            nombre=nombre.upper()
+            capacidad=int(input("Ingrese su capacidad total: "))
+            ubicacion=input("Ingrese la ubicacion del evento: ")
+            ubicacion=ubicacion.upper()
+            fecha=int(input("Ingrese la fecha del evento: "))
+            hora=int(input("Ingrese la hora del evento: "))
+            matriz_eventos[i].extend([tipo,nombre,capacidad,ubicacion,fecha,hora])
+            i=i+1"""
