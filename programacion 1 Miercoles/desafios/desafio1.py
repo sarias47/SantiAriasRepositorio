@@ -34,13 +34,15 @@ matriz5x5[0][2]="Fisica"
 matriz5x5[0][3]="Biologia"
 matriz5x5[0][4]="Matematica"
 
-for i in range(5):
-    print(matriz5x5[i])
+def promedio():
+    for i in range(5):
+        print(matriz5x5[i])
 
-for i in range(4):
-    num=matriz5x5[i+1][1]+matriz5x5[i+1][2]+matriz5x5[i+1][3]+matriz5x5[i+1][4]
-    print("El promedio de los estudiantes es es: ", num/4)
+    for i in range(4):
+        num=matriz5x5[i+1][1]+matriz5x5[i+1][2]+matriz5x5[i+1][3]+matriz5x5[i+1][4]
+        print("El promedio de los estudiantes es es: ", num/4)
 
-for i in range(4):
-    prom=matriz5x5[1][i+1]+matriz5x5[2][i+1]+matriz5x5[3][i+1]+matriz5x5[4][i+1]
-    print("El promedio de las materias es: ", prom/4)
+    for i in range(4):
+        prom=matriz5x5[1][i+1]+matriz5x5[2][i+1]+matriz5x5[3][i+1]+matriz5x5[4][i+1]
+        print("El promedio de las materias es: ", prom/4)
+promedio()
